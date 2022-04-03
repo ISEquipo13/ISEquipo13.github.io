@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="miScript.js"></script>
+    <link rel="stylesheet" href="miScript.js" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="../imgs/icono.png" />
+
+    <title>
+      Cálculo de calorías consumidas dados los hábitos de actividad semanal
+    </title>
+  </head>
+  <body>
+    <h1 id="Titulo">Calculadora de Calorías
+      <img
+      src="../imgs/icono.png"
+      alt="imagen de calculadora calorias"
+      height="35px"
+      width="35px"
+    />
+    </h1>
+    <h1 id="Titulo1">Esta página se hace con el objetivo de poder calcular tus calorías semananales mediante una calculadora…
+
+    </h1>
+    <h2>¿Qué son las calorias?</h2>
+    <p class="texto">
+      Las calorías (cal) son unidades de la cantidad de energía, ya sean,
+      contenidas en un alimento o quemadas haciendo algún tipo de ejercicio
+      físico.
+    </p>
+    <p class="texto">
+      Las calorías representan una unidad de medida para la energía que los
+      seres humanos incorporamos a través de alimentos y bebidas. Las calorías
+      Indican la cantidad de energía almacenada en los enlaces químicos de
+      aquello que se ingiere. La energía es liberada durante la digestión y
+      almacenadas en diferentes moléculas y células.
+    </p>
+    <div id="img1" align="center">
+      <img
+        src="../imgs/imagen2.jpg"
+        alt="imagen de calculadora calorias"
+        height="250px"
+        width="300px"
+      />
+      <img
+        src="../imgs/imagen3.jpg"
+        alt="imagen de calculadora calorias"
+        height="250px"
+        width="300px"
+      />
+    </div>
+    <br />
+    <h2>
+      Método que se utilizo para el cálculo de calorías dado los hábitos de
+      actividad semanal
+    </h2>
+    <p class="texto-justificado">
+      Utilizamos el Método de Harris-Benedict ya que es uno de los más recomendados por
+      los nutriólogos. <br>
+      Esta fórmula debe su nombre a J. Arthur Harris y Francis G. Benedict,
+      investigadores que concluyeron en su estudio “A Biometric Study of Human
+      Basal Metabolism” (Harris & Benedict, 1918) que los cambios en el
+      metabolismo no tienen relación proporcional con la superficie del cuerpo,
+      por lo tanto, el área de la superficie no puede ser tomada como factor
+      determinante en el metabolismo basal. La predicción más cercana de la
+      producción diaria de calorías de un sujeto puede ser hecha por el uso de
+      las ecuaciones de regresión múltiple siguientes (Tabla 1):
+      <div align="center">
+      <img
+       
+        style="float: inline-start; margin: 10px"
+        src="imgs/imgTabla1.PNG"
+      />
+      </div>
+      <div align="center">
+        <img
+         
+          style="float: inline-start; margin: 10px"
+          src="imgs/imgDatos.PNG"
+        />
+        </div>
+        Para calcular el consumo de calorías por semana, el resultado debe multiplicarse por el factor de actividad 
+        dependiendo el individuo a diagnosticar (Tabla 2).
+    </div>
+    <div align="center">
+      <img
+       
+        style="float: inline-start; margin: 10px"
+        src="imgs/imgfactor.jpeg"
+      />
+      </div>
+    </p>
+    <div align="center">
+    </div>
+    <br />
+    <h2>¿Cómo usar la calculadora de consumo de calorías por semana?</h2>
+    <p>Deberas ingresar los datos que se te solicitan, como son tu peso, tu estatura,
+       tu edad y debes ingresar el factor de actividad dependiendo el ejercicio 
+       que realizas por semana (Guiarse por la Tabla 2).
+    </p>
+    <h3>
+      <a href="https://youtu.be/gl8QIVgpnr0" class="btn-neon">Manual de Usuario</a>
+      </h3> 
+
+    <form id="formulario_js">
+      <img
+        style="float: inline-start; margin: 10px"
+        src="imgs/imgfactor.jpeg"
+      />
+      <p class="texto">
+        Ingresa tu peso (kg):
+        <input
+          type="number"
+          name="peso"
+          id="peso"
+          placeholder="Escribe tu peso"
+        />
+      </p>
+      <p class="texto">
+        Ingresa tu estatura (cm):
+        <input
+          type="number"
+          name="estatura"
+          id="estatura"
+          placeholder="Escribe tu estatura"
+        />
+      </p>
+      <p class="texto">
+        Ingresa tu edad:
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          placeholder="Escribe tu edad"
+        />
+      </p>
+      <p class="texto">
+        Ingresa el factor:
+        <input
+          type="number"
+          name="factor"
+          id="factor"
+          placeholder="Escribe tu factor"
+        />
+      </p>
+
+      <p>
+        <input
+          type="button"
+          value="Enviar hombre"
+          onclick="recibirH()"
+          class="btn-neon"
+        />
+      </p>
+      <p>
+        <input
+          type="button"
+          value="Enviar  mujer"
+          onclick="recibirM()"
+          class="btn-neon"
+        />
+      </p>
+    </form>
+    <div id="escribirH"></div>
+    <div id="escribirM"></div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    
+
+
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>Referencias</h2>
+    <p class="texto">[1] Martinez Garcia, H. (2018, septiembre). SISTEMA EXPERTO PARA CÁLCULO AUTOMÁTICO DE CALORÍAS DIARIAS BASADO EN PARÁMETROS CORPORALES.
+         ResearchGate. Recuperado 11 de marzo de 2022, de https://www.researchgate.net/publication/330367627_SISTEMA_EXPERTO_PARA_CALCULO_AUTOMATICO_DE_CALORIAS_DIARIAS_BASADO_EN_PARAMETROS_CORPORALES
+        <a href="https://www.researchgate.net/profile/Holzen-Atocha-Martinez-Garcia/publication/330367627_SISTEMA_EXPERTO_PARA_CALCULO_AUTOMATICO_DE_CALORIAS_DIARIAS_BASADO_EN_PARAMETROS_CORPORALES/links/5c3cbb8c299bf12be3c78118/SISTEMA-EXPERTO-PARA-CALCULO-AUTOMATICO-DE-CALORIAS-DIARIAS-BASADO-EN-PARAMETROS-CORPORALES.pdf"target="_blank">Pagina del Articulo</a> 
+    </p> 
+    
+    <p class="texto">[2] Nuñez Hernandez, J. (2021, 15 abril). Calculadora de calorías y Macronutrientes. FullMusculos.com. Recuperado 11 de marzo de 2022, de https://fullmusculo.com/calculadora-de-calorias/https://fullmusculo.com/calculadora-de-calorias/
+        <a href="https://fullmusculo.com/calculadora-de-calorias/https://fullmusculo.com/calculadora-de-calorias/"target="_blank">Pagina de Informacion</a>
+    </p> 
+
+
+    <p class="texto">[3] Lourdes Vargas Rivera, A. (2017, 28 abril). Estudio del gasto calórico corporal mediante un sistema experto en nutrición resolviendo datos difusos. SciELO. Recuperado 12 de marzo de 2022, de http://www.scielo.org.bo/pdf/rfer/v14n14/v14n14_a09.pdf
+        <a href="http://www.scielo.org.bo/pdf/rfer/v14n14/v14n14_a09.pdf"target="_blank">Pagina del Articulo</a>
+    </p> 
+  </body>
+</html>

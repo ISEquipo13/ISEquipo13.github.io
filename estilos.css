@@ -1,0 +1,58 @@
+body{
+    background-color: wheat;
+}
+
+#escribirH{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#escribirM{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    }
+
+#Titulo{
+    background-color: #2EC13D;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Titulo1{
+    background-color: #12a1e4;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #0EBA72;
+    letter-spacing: 4px;
+    font-size: 24;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-neon:hover{
+    background: #065031;
+    box-shadow: 0 0 10px #065031, 0 0 40px
+    #065031, 0 0 80px #065031;
+    transition-delay: 0.2s;
+}
+
